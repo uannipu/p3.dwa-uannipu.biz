@@ -26,7 +26,7 @@
         <h2>Testing program</h2>
         <input type ="text" id='pgm' maxlength='14' data-validation="required"/>
         <div class='program' id ='pg'></div>
-        <div id='recipient-error'>Max 14 chars</div>
+        <div id='pgm-error'>Max 14 chars</div>
 
         <div class='clearfix'></div>
 
@@ -41,7 +41,7 @@
         </div>
         <div class='clearfix'></div>
 
-        <h2>Type</h2>
+        <h2>Work Type</h2>
         <div class='typ' id='tp'>
             <select id='typ'>
                 <option value=''>Select</option>
@@ -59,21 +59,21 @@
         <h2 id='h2sp'>Hours: Type: Name:</h2>
 
         <div class='hrs' id='input1'>
-           <input type="text" name="hr1" id="hr1" onkeyup="recalc(this)" />
-              <select class='drpBox' id='res1' name='res1' onchange="recalc(this)">
+           <input type="text" name="hr1" id="hr1" onkeyup="recalc()" />
+              <select class='drpBox' id='res1' name='res1' onchange="recalc()">
                    <option value=''>Select</option>
                    <option value='D'>Developer</option>
                    <option value='B'>BSA</option>
                    <option value='T'>Tester</option>
                    <option value='A'>Sr.Architect</option>
                </select>
-           <input type="text" name="name1" id="name1" onkeyup="recalc(this)" />
+           <input type="text" name="name1" id="name1" onkeyup="recalc()" />
        </div>
     <div class='clearfix'></div>
 
     <br/>
     <input type='button' id='more' value='More'>
-    <input type='button' id='btnDel' value='remove' />
+    <input type='button' id='btnDel' value='Remove' />
 
     <br/><br/>
     </form>
@@ -83,9 +83,9 @@
       <div id='card-background'>
             <div id='canvas'>
                     <div id='test-program-output'></div>
-                    <table id='est'>
+                    <table id='est' class='tableData'>
                         <tbody>
-                            <tr>
+                            <tr id="firstrow">
                                 <td>Year</td>
                                 <td>Work</td>
                                 <td>Subject</td>

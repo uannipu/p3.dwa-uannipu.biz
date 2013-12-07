@@ -152,6 +152,13 @@ Card
 table,th,td{
     border: 1px solid black;
 }
+.tableData th {  font-size: 16px; color: #003399;font-style: italic; font-weight: bold }
+
+#firstrow{
+    font-size: 16px; color: #003399;font-style: italic; font-weight: bold; background: cyan;
+}
+.oddRow { background: #D0EBFF }
+.evenRow { background: #FFFFFF }
 
 .hrs .form { width: 250px; float: left; padding-top: 5px; }
 .hrs .form  label { font-size: 14px; }
