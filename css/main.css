@@ -1,0 +1,168 @@
+/*-------------------------------------------------------------------------------------------------
+General
+-------------------------------------------------------------------------------------------------*/
+* {
+    font-family:Georgia;
+    color:#333;
+}
+
+h1 {
+    text-align:center;
+    font-size:30px;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+h2 {
+    font-size:15px;
+    margin-top:30px;
+    margin-bottom:5px;
+ }
+#h2sp {
+    font-size:15px;
+    margin-top:30px;
+    margin-bottom:5px;
+    word-spacing: 33pt
+}
+
+small {
+    font-family:verdana;
+}
+
+h2:first-child {
+    margin-top:0px;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+}
+
+input[type=text] {
+    font-size:16px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------------------------------------*/
+
+
+input[type=button] {
+    background-color: #7fbf4d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
+    background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -moz-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -ms-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: -o-linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: linear-gradient(top, #7fbf4d, #63a62f);
+    border: 1px solid #63a62f;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #96ca6d;
+    box-shadow: inset 0 1px 0 0 #96ca6d;
+    color: #fff;
+    font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    padding: 6px 0 6px 0;
+    position:relative;
+    top:-1px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #4c9021;
+    width: 100px;
+}
+
+input[type=button]:hover {
+    background-color: #76b347;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76b347), color-stop(100%, #5e9e2e));
+    background-image: -webkit-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -moz-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -ms-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: -o-linear-gradient(top, #76b347, #5e9e2e);
+    background-image: linear-gradient(top, #76b347, #5e9e2e);
+    -webkit-box-shadow: inset 0 1px 0 0 #8dbf67;
+    box-shadow: inset 0 1px 0 0 #8dbf67;
+    cursor: pointer;
+}
+
+input[type=button]:active {
+    border: 1px solid #5b992b;
+    border-bottom: 1px solid #538c27;
+    -webkit-box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
+}
+
+
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrapper {
+    width:1020px;
+    margin:0px auto;
+}
+
+/* Left column */
+#controls {
+    width:300px;
+    margin-right:5px;
+    float:left;
+}
+
+/* Right column */
+#preview {
+    width:625px;
+    float:left;
+    text-align:center;
+    border:10px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------
+Card
+-------------------------------------------------------------------------------------------------*/
+#card-background {
+ /*   background-image:url('../images/card-background.jpg');*/
+    background-repeat:no-repeat;
+    height:450px;
+    width:620px;
+    margin:0px auto;
+}
+
+#canvas {
+    border:2px solid;
+    width:615px;
+    height:400px;
+    position:relative;
+    top:33px;
+    left:16px;
+    z-index:1; /* So we can place the stickers above */
+    overflow:hidden;
+}
+#est{
+    border-collapse: collapse;
+    width:100%
+}
+
+table,th,td{
+    border: 1px solid black;
+}
+
+.hrs .form { width: 250px; float: left; padding-top: 5px; }
+.hrs .form  label { font-size: 14px; }
+.hrs .form  input { font-size: 12px; width: 10px; }
+.hrs input { font-size: 12px;width:80px;padding-bottom:2;  }
+.hrs .buttonPanel { margin: auto; }
+.hrs .buttonPanel input { font-size:15px; }
+.hrs .description { padding: 5px 5px 5px; float: left; width: 250px;  }
+.hrs .description h1 { margin: 10px 0 0; padding: 0; }
+.hrs #details { clear: both;  width: 920px; margin: 40px auto 20px;  }
+.hrs #details td { vertical-align: top; border: 2px solid #efefef; }
+.hrs #details td { vertical-align: top; border: 2px solid #efefef; }
+
+
