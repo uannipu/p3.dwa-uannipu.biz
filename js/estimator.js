@@ -56,7 +56,15 @@ $('#typ').change(function() {
      var texto = $('table tr:nth-child(2) td:nth-child(2)');
     texto.html(op);
 });
-function recalc(obj){
+
+
+/**
+ *
+ *
+ */
+
+
+function recalc(){
     var tot = 0;
     var myChildren = $('.hrs').children("input[name*='hr']");
     var names = $('.hrs').children("input[name*='name']");
